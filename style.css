@@ -22,18 +22,6 @@ body{
 h1{
     font-family: 'Rodina', 'Open Sans', sans-serif;
 }
-/* Whatsapp Float */
-.whatsapp_fixed{
-    width: 3.5rem;
-     height: 3.5rem;
-    position: fixed; 
-     right: 2rem;
-     bottom: 2rem;
-    }
-   
-.whatsapp_fixed img{
-    filter: drop-shadow(1.5px 0.3px 2px #444);
-}    
 
 .contenedor{
     padding: 30px 0;
@@ -473,18 +461,26 @@ a{
 
 @media screen and (max-width:500px) {
 
-    .img-header-text{
-        display: none;
-    }
-
-    .img-header-text-300px{
-     
-    }
-
     .whatsapp_fixed{
         width: 4rem;
         right: 1rem;
         bottom: 1rem;
+    }
+
+    .img-header-text {
+        display: none;
+    }
+
+    .img-header-300px{
+        display: none;
+    }
+
+    .img-header-text-300px{
+     display: inline;
+    }
+
+    .textos-header h2 {
+     font-size:27px;
     }
 
     nav {
@@ -507,15 +503,6 @@ a{
         min-height: 150px;    
     }
 
-
-
-    .textos-header br{
-        display: initial;
-    }
-
-    .textos-header h2 {
-        font-size:27px;
-    }
 
     /*ABOUT US*/
 
@@ -582,26 +569,33 @@ a{
         display: none;
     }
 
-    .textos-header h2:before{ 
-        content: 'llegó!'; 
-        font-size: 35px;
-    }
-
     figure{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
     }
-    .img-header-300px{    
-        display: inline-block;
-        padding: 15px;  
-        width: auto;
-        height: 200px; 
-    }
-
-    .textos-header h1{
-        display: inline-block;    
-    }
 
 }
+
+
+@media screen and (max-width:250px){
+    .img-header-text-300px{
+        display: none;
+    }
+
+    .textos-header h2:before{ 
+        content: 'llegó '; 
+    }
+
+    .textos-header h2:after{ 
+        content: '!'; 
+    }
+
+
+    .img-header-300px{
+        display:inline-block ;
+        width: 1px;
+    }
+
+    
