@@ -13,15 +13,16 @@
     --size-nav: 1.4rem;
 }
 
+@page {
+    size: 1.5rem;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-p {
-    size: 1.5rem;
-}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -174,7 +175,7 @@ figure > img {
 }
 
 .contenidos-textos p {
-    padding: 0px 0px 30px 15px;
+    padding: 0 0 30px 15px;
     font-weight: 300;
     text-align: justify;
 }
@@ -366,7 +367,7 @@ a {
     }
 
     .imagotipo-header {
-        padding: 0px 30px;
+        padding: 0 30px;
     }
 
     .contenedor-sobre-nosotros {
