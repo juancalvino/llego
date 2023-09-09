@@ -369,19 +369,22 @@ a {
     text-decoration: none;
 }
 
+.button_fixed {
+}
+
 /* Whatsapp Float */
 .button_fixed {
-    position: fixed;
+    position: sticky;
     padding: 0 1rem;
     display: flex;
     justify-content: end;
     width: 100%;
-    bottom: 2.5rem;
+    bottom: 2%;
 }
 
 
 .button_fixed img {
-    width: 4rem;
+    width: 3rem;
     filter: drop-shadow(1.5px 0.3px 2px #444);
 }
 
@@ -393,12 +396,13 @@ a {
 }
 
 .client_fixed img {
-    width: 3rem;
+    width: 2.4rem;
 }
 
 @media screen and (max-width: 900px) {
 
     header {
+        height: 450px;
         background-position: center;
     }
 
@@ -485,14 +489,12 @@ a {
 
         .servicio-ind img {
         }
-
-        /* Whatsapp Float */
-        .whatsapp_fixed {
-            width: 4.5rem;
-        }
     }
 
     @media screen and (max-width: 500px) {
+        header {
+            height: 400px;
+        }
         .nav {
             display: flex;
             justify-content: center;
@@ -529,12 +531,6 @@ a {
             justify-content: center;
             align-items: center;
             opacity: 1;
-        }
-
-        .whatsapp_fixed {
-            width: 4rem;
-            right: 20px;
-            bottom: 35px;
         }
 
         .img-header-text {
@@ -630,6 +626,7 @@ a {
         }
 
         .button_fixed {
+            position: fixed;
             justify-content: space-between;
         }
 
