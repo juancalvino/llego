@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/ca087d8356.js" crossorigin="anonymous"></script>
+    <script defer src="menu_buttom.js"></script>
     <!-- Icono de Navegador -->
     <link rel="shortcut icon"
           href="img/svg/marca/icono-color-SVG.svg"
@@ -16,10 +17,13 @@
 <body>
 
 <header>
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="https://logisticallego.lightdata.app/#">Acceso a clientes</a>
-        <a href="#contacto">Contáctanos</a>
+    <nav class="nav" id="nav">
+        <a class="menu_button" id="menuButtom"><i class="fa-solid fa-bars"></i></a>
+        <ul class="nav_list" id="navList">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="https://logisticallego.lightdata.app/#">Acceso a clientes</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
     </nav>
 
     <section class="textos-header">
@@ -167,9 +171,15 @@
         </div>
     </div>
 </footer>
-<a href="https://wa.me/541154811742" class="whatsapp_fixed" target="_blank">
-    <img src="img/svg/marca/whatsapp_logo.svg"
-         alt="WhatsApp_SVG">
-</a>
+<div class="button_fixed">
+    <a href="https://wa.me/541154811742" class="whatsapp_fixed" target="_blank">
+        <img src="img/svg/marca/whatsapp_logo.svg"
+             alt="WhatsApp_SVG">
+    </a>
+    <a href="https://logisticallego.lightdata.app/#" class="client_fixed" target="_blank">
+        <img src="img/svg/marca/icono-color-SVG.svg"
+             alt="WhatsApp_SVG">
+    </a>
+</div>
 </body>
 </html>
