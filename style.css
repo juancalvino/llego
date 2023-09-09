@@ -20,6 +20,7 @@ h1 {
     --color-primary: hsl(21, 99%, 48%);
     --color-primary-dark: hsla(21, 98%, 40%, 0.75);
     --color-gray: hsla(0, 0%, 15%);
+    --color-gray-ligth: hsla(0, 0%, 25%);
     --color-black: hsla(0, 0%, 5%);
     --color-primary-background: hsla(22, 100%, 50%, 0.75);
 
@@ -110,7 +111,7 @@ header .textos-header {
     color: white;
 }
 
-nav > a:hover {
+.nav_list a:hover {
     border-radius: 10px;
     background-color: var(--color-primary-dark);
     color: var(--color-gray);
@@ -507,7 +508,12 @@ a {
         }
 
         .nav_list a:hover {
-            color: var(--color-primary)
+            padding: 6px;
+            background-color: var(--color-gray-ligth);
+            color: var(--color-primary);
+        }
+
+        .nav_list a:hover {
         }
 
 
@@ -554,6 +560,12 @@ a {
             position: absolute;
             top: 0.5em;
             font-size: 2rem;
+            color: var(--color-gray);
+        }
+
+        .menu_button.active {
+            border-radius: 10px;
+            background-color: var(--color-primary);
         }
 
         .imagotipo-header {
