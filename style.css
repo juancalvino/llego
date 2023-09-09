@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+
+/* Ahora puedes usar la fuente Open Sans en tu CSS */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Ejemplo de uso de la fuente en otro elemento */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; /* Puedes especificar diferentes pesos de fuente */
+}
+
 @font-face {
     font-family: 'Rodina';
     src: url(Rodina-Regular.otf);
